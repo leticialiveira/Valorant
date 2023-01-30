@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --background-resumo: #f5f69c;
+    --color-titulo: #ea4b4b;
+    --color-body: #ffffff;
+    --background-retangulo: rgba(255, 255, 255, 0.07);
+    --background-border:#B3B3B3;
+
+    --linhas-rank: rgba(255, 255, 255, 0.5);
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-body);
+    background: url(../Assets/img/img/wallpapers\ 5.png) no-repeat;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: auto;
+    position: relative;
+}
+
+.main .alvo-um {
+    position: absolute;
+    bottom: 290px;
+    right: 680px;
+}
+
+.main .alvo-dois {
+    position: absolute;
+    top: 240px;
+    right: 430px;
+}
+
+.main .alvo-tres {
+    position: absolute;
+    bottom: 380px;
+    right: 400px;
+}
+
+.main .alvo-quatro {
+    position: absolute;
+    left: 450px;
+    bottom: 430px ;
+}
+
+.main .alvo-cinco {
+    position: absolute;
+    left: 300px;
+    top: 380px ;
+}
+
+.main .alvo-seis {
+    position: absolute;
+    left: 160px;
+    top: 580px ;
+}
+
+.main header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+  
+header .fundo-menu {
+    position: relative;
+}
+  
+header .inicio-menu {
+    position: absolute;
+    bottom: 95%;
+    left: 45%;
+}
+
+header .inicio-menu p {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 33px;
+    position: absolute;
+    top: 2%;
+    right: 30%;
+}
+  
+header .icons-e  {
+    position: absolute;
+    left: 40%;   
+}
+  
+.icons-e img {
+    margin-right: 6px;
+}
+
+header .icons-d {
+    position: absolute;
+    right: 37%;
+}
+
+.icons-d img {
+    margin-right: 6px;
+}
+
+.main .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    height: auto;
+}
+
+.main .titulo h1 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: var(--color-titulo);
+    font-weight: 700;
+    font-size: 64px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.titulo > img {
+    position: absolute;
+    right: 689px;
+    top: 130px;
+}
+
+.titulo .space-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+  
+.titulo .space-line {
+    width: 200px;
+    border: solid 1px var(--color-body);
+    display: flex;
+    height: 0px;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.centro .sombra-arma {
+    position: relative;
+}
+
+.centro .arma-principal {
+    position: absolute;
+    bottom: 21%;
+}
+
+.centro .linha-arma {
+    position: absolute;
+    bottom: -13px;
+}
+
+.centro p {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    position: absolute;
+    bottom: 7%;
+}
+
+.centro .raio-d {
+    position: absolute;
+    top: 160px;
+    right: -11px;
+}
+
+.centro .retangulo-d p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    background: var(--background-retangulo);
+    border: 1px solid var(--background-retangulo);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    position: absolute;
+    top: 130px;
+    right: -100px;
+}
+
+.centro .raio-cd {
+    position: absolute;
+    top: 215px;
+    right: 146px;
+}
+
+.centro .retangulo-cd p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    background: var(--background-retangulo);
+    border: 1px solid var(--background-retangulo);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    position: absolute;
+    top: 185px;
+    left: 250px;
+}
+
+.centro .raio-ce {
+    position: absolute;
+    top: 145px;
+    left: 133px;
+}
+
+.centro .retangulo-ce p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    background: var(--background-retangulo);
+    border: 1px solid var(--background-retangulo);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    position: absolute;
+    top: 115px;
+    left: 133px;
+}
+
+.centro .raio-e {
+    position: absolute;
+    top: 188px;
+    left: 32px;
+}
+
+.centro .retangulo-e p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    background: var(--background-retangulo);
+    border: 1px solid var(--background-retangulo);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    position: absolute;
+    top: 157px;
+    left: -10px;
+}
+
+.main .escolha-arma {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    gap: 15px;
+
+}
+
+.escolha-arma .arma-tres {
+    padding-bottom: 30px;
+    border-bottom: solid 1px var(--background-border);
+}
+
+.escolha-arma img:hover {
+    transform: scale(0.8);
+  }
