@@ -22,37 +22,35 @@
 
 // erro
 // 4 Crie uma função que conte o número de ocorrências de uma determinada letra em uma string. Explicação: Essa função deve percorrer uma string e contar quantas vezes uma determinada letra aparece.
-var str= "letictia"
-var letter="t"
-var letterRepeated = str.split('').map((element) => {
-    console.log(element==letter)
-    if(element == letter){
-        return console.log(element.length);
-    }
-})
-function OcurrenceNumber(params, secondParams) {
-    let result = params.split('').map((element) => {
-        if(element == secondParams) {
-            return 
-        }
-    })
-    return result
-}
-console.log(OcurrenceNumber(str, letter))
+// var str= "letictia"
+// var letter="t"
+// function OcurrenceNumber(params, secondParams) {
+//     let result = params.split('').map((element) => {
+//         if(element == secondParams) {
+//             return element.length
+//         } else {
+//             return value
+//         }
+//     })
+//     return result
+// }
+// console.log(OcurrenceNumber(str,letter))
 
 
-console.log('casa'.split(''));
 
-
-//erro
 // 5 Crie uma função que calcule a média de uma lista de números. Explicação: Essa função deve percorrer uma lista de números e calcular a média aritmética dos valores.
-// var numbers = [10,10];
-// var sum = numbers.reduce((element,value){
-//    //reduce= serve pra juntar o elemento em um so
-//   return (element + value)/numbers.length
-// });
-
-// console.log(sum);
+// let lista = [9, 8 ,7]
+// let dividir= lista.length
+// function Media(elementos,divisor){
+//     let soma = 0
+//     for(let i in elementos) {
+//       soma += elementos[i]
+//     }
+//       let sum = ( soma) / (divisor)
+//         return sum
+// }
+// console.log(Media(lista,dividir));
+// console.log(dividir);
 
 
 //6 Crie uma função que verifique se um número é primo. Explicação: Essa função deve verificar se um número é divisível somente por 1 e por ele mesmo.
@@ -78,20 +76,20 @@ console.log('casa'.split(''));
 // console.log(Remover(numbers)); 
 
 
-//erro
+
 //8  Crie uma função que verifique se todos os elementos de uma lista são iguais. Explicação: Essa função deve percorrer uma lista e verificar se todos os elementos são iguais.
-// var list=["",""]
-// for( var i=0; i<list.length; i++)
-// if( list[0]===list[1])
-// console.log("igual");
-// else
-// console.log("diferente")
-//
-// let list=[ 'a','a']
-// function Elementos(iguais){
-//     return iguais===
+// let elements = [1,1,1,1,2]
+
+// function Equal(list){
+//     for (let i = 1; i < list.length; i++){
+//         if(list[i] !== list[0]) {
+//             return 'diferentes';
+//         }
+//     }
+//     return 'iguais'
 // }
-// console.log(Elementos(list));
+// console.log(Equal(elements));
+
 
 //9 Crie uma função que invoque outra função de forma recursiva. Explicação: Essa função deve invocar outra função de forma recursiva até que uma condição seja satisfeita.
 
