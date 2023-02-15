@@ -33,8 +33,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* border-left: solid 1px var(--linhas-main); */
-  /* border-right: solid 1px var(--linhas-main); */
 }
 
 .main header {
@@ -46,12 +44,17 @@ body {
 
 header .fundo-menu {
   position: relative;
+  bottom: 84%;
 }
 
 header .inicio-menu {
   position: absolute;
-  bottom: 95%;
-  left: 45%;
+  top: 0%;
+  left: 35%;
+}
+
+header .inicio-menu a { 
+  color: var(--color-body);
 }
 
 header .inicio-menu p {
@@ -65,7 +68,8 @@ header .inicio-menu p {
 
 header .icons-e {
   position: absolute;
-  left: 40%;
+  left: 15%;
+  top: 0%;
 }
 
 .icons-e img {
@@ -74,7 +78,8 @@ header .icons-e {
 
 header .icons-d {
   position: absolute;
-  right: 40%;
+  right: 15%;
+  top: 0%;
 }
 
 .icons-d img {
@@ -327,7 +332,13 @@ header .icons-d {
 .escolha-personagem .imagem-reyna {
   margin-bottom: 15px;
 }
-.escolha-personagem img:hover {
-  /* border: solid 1px var(--linhas-main); */
-  transform: scale(0.8);
+
+.escolha-personagem img {
+  transition: .4s;
+  cursor: context-menu !important; 
+
+}
+.escolha-personagem:hover > :not(:hover) {
+  opacity: .4;
+  transform: scale(.9);
 }

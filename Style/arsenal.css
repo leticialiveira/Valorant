@@ -84,12 +84,17 @@ body {
   
 header .fundo-menu {
     position: relative;
-}
+    bottom: 84%;
+  }
   
 header .inicio-menu {
-    position: absolute;
-    bottom: 95%;
-    left: 45%;
+  position: absolute;
+  top: 0%;
+  left: 35%;
+}
+
+header .inicio-menu a { 
+    color: var(--color-body);
 }
 
 header .inicio-menu p {
@@ -103,7 +108,8 @@ header .inicio-menu p {
   
 header .icons-e  {
     position: absolute;
-    left: 40%;   
+    left: 15%;
+    top: 0%;   
 }
   
 .icons-e img {
@@ -112,7 +118,8 @@ header .icons-e  {
 
 header .icons-d {
     position: absolute;
-    right: 37%;
+    right: 15%;
+    top: 0%;
 }
 
 .icons-d img {

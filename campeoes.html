@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/campeoes.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="shortcut icon" href="./Assets/img/icons/LOGO-1.ico" type="image/x-icon">
     <title>Campeões</title>
 </head>
@@ -13,25 +15,28 @@
         <header>
             <div class="fundo-menu">
                 <img src="./Assets/img/icons/fundo menu.png" alt="">
-            </div>
             <div class="inicio-menu">
-                <img src="./Assets/img/icons/inicio menu.png" alt="">
-                <p>INÍCIO</p>
+                <a href="./central.html">
+                    <img src="./Assets/img/icons/inicio menu.png" alt="">
+                    <p>INÍCIO</p>
+                </a>
             </div>
             <div class="icons-e">
-                <a href="/resume.html">
+                <a href="resume.html">
                     <img src="./Assets/img/icons/menu 1.png" alt="">
                 </a>
                 <img src="./Assets/img/icons/campeos branco.png" alt="">
             </div>
             <div class="icons-d">
-                <a href="/arsenal.html">
+                <a href="arsenal.html">
                     <img src="./Assets/img/icons/menu 3.png" alt="">
                 </a>
-                <a href="/rank.html">
+                <a href="rank.html">
                     <img src="./Assets/img/icons/menu 4.png" alt="">
                 </a>
             </div>
+        </div>
+
         </header>    
         <section class="centro">
             <div class="centro-esquerda">
@@ -44,11 +49,11 @@
                         <ul>
                             <li>
                                 <p>Partidas jogadas</p>
-                                <span>57 partidas</span>
+                                <span class="teste">1</span>
                             </li>
                             <li>
                                 <p>Vitórias</p>
-                                <span>33 vitórias</span>
+                                <span class="teste2">33 vitórias</span>
                             </li>
                             <li>
                                 <p>Derrotas</p>
@@ -126,15 +131,14 @@
         </section>
         <section class="personagens-bottom">
             <div class="divisao">
-                <div class="plane-line">
-                </div>
+                <div class="plane-line"></div>
                 <div class="seta">
                     <img src="./Assets/img/icons/seta.png" alt="Seta dupla ">
                 </div>
-                <div class="plane-line">
-                </div>
+                <div class="plane-line"></div>
             </div>
             <div class="escolha-personagem">
+                
                 <img src="./Assets/img/img/e.p 1 (Cypher).png" alt="Personagem Cypher">
                 <img src="./Assets/img/img/e.p 2 (Omi).png" alt="Personagem Omi">
                 <img src="./Assets/img/img/e.p 3 (Astra).png" alt="Personagem Astra">
@@ -154,4 +158,13 @@
         </section>
     </div>
 </body>
+<script>
+
+    anime({
+  targets: ['.teste'],
+  innerHTML: [0, 10000],
+  easing: 'linear',
+  round: 10 // Will round the animated value to 1 decimal
+});
+</script>
 </html>
