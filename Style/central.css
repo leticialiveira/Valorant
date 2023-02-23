@@ -37,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-bottom: 80px;
 }
 
@@ -47,22 +48,22 @@ body {
   justify-content: center;
 }
 
-header .fundo-menu {
+header .bottom-menu {
   position: relative;
   bottom: 84%;
 }
 
-header .inicio-menu {
+header .start-menu {
   position: absolute;
   top: 0%;
   left: 35%;
 }
 
-header .inicio-menu a { 
+header .start-menu a { 
   color: var(--color-body);
 }
 
-header .inicio-menu p {
+header .start-menu p {
   font-weight: 600;
   font-size: 28px;
   line-height: 33px;
@@ -71,24 +72,24 @@ header .inicio-menu p {
   right: 30%;
 }
 
-header .icons-e {
+header .icons-left {
   position: absolute;
   left: 15%;
   top: 0%;
 }
 
-.icons-e img {
+.icons-left img {
   margin-right: 6px;
 }
 
-header .icons-d {
+header .icons-right {
   position: absolute;
   right: 15%;
   top: 0%;
 
 }
 
-.icons-d img {
+.icons-right img {
     margin-right: 6px;
 }
 
@@ -124,15 +125,6 @@ header .icons-d {
   height: 0px;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url("../Valorant/Assets/img/img/wallpapers\ 1.png") no-repeat;
-  background-size: cover;
-}
 
 table {
   border-radius: 10px;
@@ -179,11 +171,11 @@ table tr {
   background-color: rgba(82, 82, 82, 0.30);
 }
 
-.agentes {
+.agents {
   position: relative;
 }
 
-.fundo-imgs, .foto-Jett, .foto-Viper, .foto-Brit, .foto-Sage, .foto-KJ, .foto-BN, .foto-Reyna, .foto-Kay-o {
+.bottom-image, .image-Jett, .image-Viper, .image-Brit, .image-Sage, .image-KJ, .image-BN, .image-Reyna, .image-Kay-o {
   position: absolute;
   right: -25px;
   top: -25px;

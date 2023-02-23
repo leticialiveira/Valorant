@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/arsenal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="shortcut icon" href="Assets/img/icons/LOGO-1.ico" type="image/x-icon">
     <title>Armas</title>
 </head>
 <body>
     <div class="main">
-        <img class="alvo-um" src="/Assets/img/icons/alvo 1.png" alt="">
-        <img class="alvo-dois" src="/Assets/img/icons/alvo 2.png" alt="">
-        <img class="alvo-tres" src="/Assets/img/icons/alvo 3.png" alt="">
-        <img class="alvo-quatro" src="/Assets/img/icons/alvo 4.png" alt="">
-        <img class="alvo-cinco" src="/Assets/img/icons/alvo 5.png" alt="">
-        <img class="alvo-seis" src="/Assets/img/icons/alvo 6.png" alt="">
+        <img class="target-0" src="/Assets/img/icons/alvo 1.png" alt="">
+        <img class="target-1" src="/Assets/img/icons/alvo 2.png" alt="">
+        <img class="target-2" src="/Assets/img/icons/alvo 3.png" alt="">
+        <img class="target-3" src="/Assets/img/icons/alvo 4.png" alt="">
+        <img class="target-4" src="/Assets/img/icons/alvo 5.png" alt="">
+        <img class="target-5" src="/Assets/img/icons/alvo 6.png" alt="">
 
         <header>
-            <div class="fundo-menu">
+            <div class="bottom-menu">
                 <img src="./Assets/img/icons/fundo menu.png" alt="">
-            <div class="inicio-menu">
+            <div class="start-menu">
                 <a href="./central.html">
                     <img src="./Assets/img/icons/inicio menu.png" alt="">
                     <p>INÍCIO</p>
                 </a>
             </div>
-            <div class="icons-e">
+            <div class="icons-left">
                 <a href="resume.html">
                     <img src="./Assets/img/icons/menu 1.png" alt="">
                 </a>
@@ -34,7 +35,7 @@
                     <img src="./Assets/img/icons/menu 2.png" alt="">
                 </a>
             </div>
-            <div class="icons-d">
+            <div class="icons-right">
                 <img src="./Assets/img/icons/arsenal branco.png" alt="">
                 <a href="rank.html">
                     <img src="./Assets/img/icons/menu 4.png" alt="">
@@ -44,7 +45,7 @@
 
         </header>
         
-        <section class="titulo">
+        <section class="title">
             <h1>ARSENA</h1>
             <img src="./Assets/img/icons/titulo arsenal.png" alt="">
         <div class="space-logo">
@@ -56,37 +57,65 @@
         </div>
         </section>
 
-        <section class="centro">
-            <img class=" sombra-arma" src="./Assets/img/icons/sombra arma.png" alt="">
-            <img class=" arma-principal" src="./Assets/img/img/vandal 1.png" alt="">
-            <img class=" linha-arma" src="./Assets/img/icons/Linha 1 arma.png" alt="">
+        <section class="center">
+            <img class=" shadow-arm" src="./Assets/img/icons/sombra arma.png" alt="">
+            <img class=" arm-main" src="./Assets/img/img/vandal 1.png" alt="">
+            <img class=" line-arm" src="./Assets/img/icons/Linha 1 arma.png" alt="">
             <p> VANDAL</p>
-            <img class=" raio-d" src="./Assets/img/icons/linha raio d.png" alt="">
-            <div class="retangulo-d">
-                <p>51% de acertos na cabeça</p>
+            <img class=" ray-right" src="./Assets/img/icons/linha raio d.png" alt="">
+            <div class="rectangle-right">
+                <p  class="head-hits">51% de acertos na cabeça</p>
             </div>
-            <img class=" raio-cd" src="./Assets/img/icons/linha raio cd.png" alt="">
-            <div class="retangulo-cd">
-                <p>38% de precisão</p>
+            <img class=" ray-center-right" src="./Assets/img/icons/linha raio cd.png" alt="">
+            <div class="rectangle-center-right">
+                <p class="headshots">38% de precisão</p>
             </div>
-            <img class=" raio-ce" src="./Assets/img/icons/linha raio ce.png" alt="">
-            <div class="retangulo-ce">
-                <p>266 headshots</p>
+            <img class=" ray-center-left" src="./Assets/img/icons/linha raio ce.png" alt="">
+            <div class="rectangle-center-left">
+                <p class="precision">266 headshots</p>
             </div>
-            <img class="raio-e" src="/Assets/img/icons/linha raio e (2).png" alt="">
-            <div class="retangulo-e">
-                <p>526 abates  </p>
+            <img class="ray-left" src="./Assets/img/icons/linha raio e (2).png" alt="">
+            <div class="rectangle-left">
+                <p class="slaughter">526 abates  </p>
             </div>
         </section>
 
-        <section class="escolha-arma">
+        <section class="choice-arm">
             <img  src="/Assets/img/img/arma 1.png" alt="">
             <img  src="/Assets/img/img/arma 2.png" alt="">
-            <img class= "arma-tres" src="/Assets/img/img/Vandal 3.png" alt="">
+            <img class= "arm-3" src="/Assets/img/img/Vandal 3.png" alt="">
             <img  src="/Assets/img/img/Vandal 4.png" alt="">
             <img  src="/Assets/img/img/Vandal 5.png" alt="">
         </section>
-
     </div>
 </body>
+<script>
+    
+anime({
+    targets: ['.headshots'],
+    innerHTML: [0, 266] + ' headshots',
+    easing: 'linear',
+    round: 10 
+});
+
+anime({
+    targets: ['.precision'],
+    innerHTML: [0, 38] + '% de precisão',
+    easing: 'linear',
+    round: 10 
+});
+
+anime({
+    targets: ['.headshots'],
+    innerHTML: [0, 51] + ' % de acertos na cabeça',
+    easing: 'linear',
+    round: 10 
+});
+anime({
+  targets: ['.slaughter'],
+  innerHTML: [0, 526] + ' abates',
+  easing: 'linear',
+  round: 10 
+});
+</script>
 </html>
