@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/resume.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="shortcut icon" href="Assets/img/icons/LOGO-1.ico" type="image/x-icon">
     <title>Resumo da conta</title>
 </head>
 <body>
     <div class="main">
         <header>
+<<<<<<< HEAD
             <div class="fundo-menu">
                 <img src="./Assets/img/img/icons/fundo menu.png" alt="">
             </div>
@@ -30,76 +33,109 @@
                 </a>
                 <a href="/rank.html">
                     <img src="./Assets/img/img/icons/menu 4.png" alt="">
+=======
+            <div class="bottom-menu">
+                <img src="./Assets/img/icons/fundo menu.png" alt="">
+            <div class="start-menu">
+                <a href="./central.html">
+                    <img src="./Assets/img/icons/inicio menu.png" alt="">
+                    <p>INÍCIO</p>
                 </a>
             </div>
+            <div class="icons-left">
+                <div class="icons-left-white">
+                    <img src="./Assets/img/icons/resumo branco.png" alt="">
+                </div>
+                    <a href="./campeoes.html">
+                        <img src="./Assets/img/icons/menu 2.png" alt="">
+                    </a>
+            </div>
+            <div class="icons-right">
+                <a href="./arsenal.html">
+                    <img src="./Assets/img/icons/menu 3.png" alt="">
+                </a>
+                <a href="./rank.html">
+                    <img src="./Assets/img/icons/menu 4.png" alt="">
+>>>>>>> 790c931e94588a53eb06ebf368eaaf31897a57f0
+                </a>
+            </div>
+            </div>
+
         </header>
-        <div class="resumo-top">
+        <div class="resume-top">
             <h1>RESUMO DA CONTA</h1>
         </div>
-        <section class="centro">
-            <div class="informacoes-esquerda">
+        <section class="center">
+            <div class="information-left">
                 <ul>
                     <li>
                         <p> Partidas Jogadas</p>
-                        <span>264 partidas</span>
+                        <span  class="matches-played">264 partidas</span>
                     </li>  
                     <li>
                         <p>Vitórias</p>
-                        <span>163 vitórias</span>
+                        <span class="victories">163 vitórias</span>
                     </li>  
                     <li>
                         <p>Derrotas </p>
-                        <span>83 derrotas</span>
+                        <span class="defeats">83 derrotas</span>
                     </li>
                     <li>
                         <p> Empates</p>
-                        <span>8 empates</span>
+                        <span class="ties">8 empates</span>
                     </li>    
                     <li>        
                         <p>Taxa de winrate</p>
-                        <span> 61.83 %</span> 
+                        <span class="winrate"> class="partidas-jogadas" 61.83 %</span> 
                     </li>
                     <li>        
                         <p>Conta criada em</p>
-                        <span>21/12/2021</span>
+                        <span >21/12/2021</span>
                     </li>
                 </ul>
 
             </div>
-            <div class="informacoes-centro">
+            <div class="information-center">
                     <p> Agente favorito</p>
                     <span> JETT</span>
+<<<<<<< HEAD
                     <div class="abates-personagem">
                         <img class="sombra-personagem" src="./Assets/img/img/icons/personagem fundo.png" alt="">
+=======
+                    <div class="slaughter-persona">
+                        <img class="shadow-persona" src="./Assets/img/icons/personagem fundo.png" alt="">
+>>>>>>> 790c931e94588a53eb06ebf368eaaf31897a57f0
                         <li>
                             <p> Partidas</p>
-                            <span>89 partidas</span>
+                            <span class="matches">89 partidas</span>
                         </li>
-                        <img class="personagem-principal" src="./Assets/img/img/personagem.png" alt="">
+                        <div class="persona-central">
+                            <img class="persona-main" src="./Assets/img/img/personagem.png" alt="">
+                        </div>
                     </div>
                     
             </div>
-            <div class="informacoes-direita">
+            <div class="information-right">
                 <ul>
                     <li>
                         <p> Total de abates</p>
-                        <span>1216 abates</span>
+                        <span class="slaughter">1216 abates</span>
                     </li>  
                     <li>
                         <p>Total de mortes</p>
-                        <span>827 mortes</span>
+                        <span class="deaths">827 mortes</span>
                     </li>  
                     <li>
                         <p>Total de assistências</p>
-                        <span>789 assistências</span>
+                        <span class="assists">789 assistências</span>
                     </li>
                     <li>
                         <p> Total de abates com headshot</p>
-                        <span>573 abates com headshot</span>
+                        <span class="headshot">573 abates com headshot</span>
                     </li>    
                     <li>        
                         <p>Taxa de KDA</p>
-                        <span> 60 %</span> 
+                        <span class="KDA"> 60 %</span> 
                     </li>
                     <li>        
                         <p>Maior patente alcançada</p>
@@ -108,9 +144,89 @@
                 </ul>
             </div>
         </section>
-        <div class="texto-resumo">
+        <div class="text-resume">
             <p>Aqui você encontra um breve resumo da sua conta, deve-se notar que todas as partidas são contabilizadas no total de partidas. Esteja ciente de que as informações aqui listadas não são de nosso controle e  para quaisquer dúvidas entre em contato diretamente com a equipe de suporte da Riot Games.</p>
         </div>
     </div>
 </body>
+<script>
+
+anime({
+  targets: ['.matches-played'],
+  innerHTML: [0, 264] + ' partidas',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.victories'],
+  innerHTML: [0, 163] + ' vitórias',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.defeats'],
+  innerHTML: [0, 83] + ' derrotas',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.ties'],
+  innerHTML: [0, 8] + ' empates',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.winrate'],
+  innerHTML: [0, 61.83] + '%',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.slaughter'],
+  innerHTML: [0, 1216] + '  abates',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.deaths'],
+  innerHTML: [0, 827] + '  mortes',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.assists'],
+  innerHTML: [0, 789] + ' assistências',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.headshot'],
+  innerHTML: [0, 573] + ' abates com headshot',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.KDA'],
+  innerHTML: [0, 60] + '%',
+  easing: 'linear',
+  round: 10 
+});
+
+anime({
+  targets: ['.matches'],
+  innerHTML: [0, 89] + ' partidas',
+  easing: 'linear',
+  round: 10 
+});
+
+</script>
 </html>

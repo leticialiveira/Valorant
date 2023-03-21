@@ -43,17 +43,22 @@ body {
     justify-content: center;
 }
   
-header .fundo-menu {
+header .bottom-menu {
     position: relative;
-}
+    bottom: 84%;
+  }
   
-header .inicio-menu {
-    position: absolute;
-    bottom: 95%;
-    left: 45%;
+header .start-menu {
+  position: absolute;
+  top: 0%;
+  left: 35%;
 }
 
-header .inicio-menu p {
+header .start-menu a { 
+    color: var(--color-body);
+}
+
+header .start-menu p {
     font-weight: 600;
     font-size: 28px;
     line-height: 33px;
@@ -62,25 +67,27 @@ header .inicio-menu p {
     right: 30%;
 }
   
-header .icons-e {
+header .icons-left {
     position: absolute;
-    left: 40%;
+    left: 15%;
+    top: 0%;
 }
-  
-.icons-e img {
+
+.icons-left img {
     margin-right: 6px;
 }
 
-header .icons-d {
+header .icons-right {
     position: absolute;
-    right: 40%;
+    right: 15%;
+    top: 0%;
 }
 
-.icons-d img {
+.icons-right img {
     margin-right: 6px;
 }
 
-.main .primeira-parte {
+.main .first-part {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +95,7 @@ header .icons-d {
     margin-top: 100px;
 }
   
-.main .primeira-parte h1 {
+.main .first-part h1 {
     display: flex;
     align-items: center;
     justify-items: center;
@@ -98,7 +105,7 @@ header .icons-d {
     margin-top: 30px;
 }
 
-.primeira-parte .space-logo {
+.first-part .space-logo {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -107,14 +114,14 @@ header .icons-d {
     padding-bottom: 30px;
 }
   
-.primeira-parte .space-line {
+.first-part .space-line {
     width: 200px;
     border: solid 1px #ffffff;
     display: flex;
     height: 0px;
 }
 
-.resumo  {
+.resume  {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +132,7 @@ header .icons-d {
     padding-bottom: 30px;
 }
 
-.centro {
+.center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +140,7 @@ header .icons-d {
     width: 100%;
 }
 
-.centro .maior-rank {
+.center .larger-rank {
     width: auto;
     height: auto;
     display: flex;
@@ -142,28 +149,28 @@ header .icons-d {
     flex-direction: column;
 }
 
-.maior-rank h3 {
+.larger-rank h3 {
     font-weight: 600;
     font-size: 28px;
     line-height: 33px;
     padding-bottom: 12px;
 }
 
-.maior-rank .space-line-rank {
+.larger-rank .space-line-rank {
     width: 238.5px;
     height: 0px;
     border: 2px solid var(--color-body);
 }
-.maior-rank .sombra-radiante {
+.larger-rank .shadow-radiant {
     position: relative;
 }
 
-.maior-rank .imagem-radiante {
+.larger-rank .image-radiant {
     position: absolute;
     top:48%;
 }
 
-.maior-rank > p {
+.larger-rank > p {
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -174,7 +181,11 @@ header .icons-d {
     text-align: center;
 }
 
-.centro .rank-atual {
+.larger-rank > p:hover {
+    transform: scale(1.1);
+}
+
+.center .rank-actual {
     width: auto;
     height: auto;
     display: flex;
@@ -184,29 +195,31 @@ header .icons-d {
     margin-bottom: 100px;
 }
 
-.rank-atual h3 {
+.rank-actual h3 {
     font-weight: 600;
     font-size: 28px;
     line-height: 33px;
     padding-bottom: 12px;
 }
 
-.rank-atual .space-line-rank {
+.rank-actual .space-line-rank {
     width: 238.5px;
     height: 0px;
     border: 2px solid var(--color-body);
 }
 
-.rank-atual .sombra-imortal {
+.rank-actual .shadow-immortal {
     position: relative;
 }
 
-.rank-atual .imagem-imortal {
+
+.rank-actual .image-immortal {
     position: absolute;
     top:44%;
+    left: 46%;
 }
 
-.rank-atual > p {
+.rank-actual > p {
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -217,7 +230,11 @@ header .icons-d {
     text-align: center;
 }
 
-.centro .menor-rank {
+.rank-actual > p:hover {
+    transform: scale(1.1);
+}
+
+.center .smaller-rank {
     width: auto;
     height: auto;
     display: flex;
@@ -226,28 +243,28 @@ header .icons-d {
     flex-direction: column;
 }
 
-.menor-rank h3 {
+.smaller-rank h3 {
     font-weight: 600;
     font-size: 28px;
     line-height: 33px;
     padding-bottom: 12px;
 }
 
-.menor-rank .space-line-rank {
+.smaller-rank .space-line-rank {
     width: 238.5px;
     height: 0px;
     border: 2px solid var(--color-body);
 }
-.menor-rank .sombra-diamante {
+.smaller-rank .shadow-diamond {
     position: relative;
 }
 
-.menor-rank .imagem-diamante {
+.smaller-rank .image-diamond  {
     position: absolute;
     top:48%;
 }
 
-.menor-rank > p {
+.smaller-rank > p {
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -258,7 +275,11 @@ header .icons-d {
     text-align: center;
 }
 
-.texto-rank{
+.smaller-rank > p:hover {
+    transform: scale(1.1);
+}
+
+.text-rank{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,13 +290,13 @@ header .icons-d {
     gap: 5px;
 }
 
-.texto-rank p {
+.text-rank p {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px
 }
 
-.texto-rank span {
+.text-rank span {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --background-list: #f5f69c;
+  --color-win: #14ff00;
+  --color-loss: #ff0000;
+  --color-semnome: #00b2ff;
+  --color-titulo: #ea4b4b;
+  --color-body: #ffffff;
+
+  --linhas-main: #6666664f;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: url('../Assets/img/img/wallpapers\ 1.png') no-repeat !important;
+  background-size: cover !important; 
+  color: var(--color-body);
+}
+
+.main {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.main header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+header .bottom-menu {
+  position: relative;
+  bottom: 84%;
+}
+
+header .start-menu {
+  position: absolute;
+  top: 0%;
+  left: 35%;
+}
+
+header .start-menu a { 
+  color: var(--color-body);
+}
+
+header .start-menu p {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  position: absolute;
+  top: 2%;
+  right: 30%;
+}
+
+header .icons-left {
+  position: absolute;
+  left: 15%;
+  top: 0%;
+}
+
+.icons-left img {
+  margin-right: 6px;
+}
+
+header .icons-right {
+  position: absolute;
+  right: 15%;
+  top: 0%;
+
+}
+
+.icons-right img {
+    margin-right: 6px;
+}
+
+.main .start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.main .start h1 {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: var(--color-titulo);
+  font-weight: 700;
+  font-size: 64px;
+  height: auto;
+}
+.start .space-logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.start .space-line {
+  width: 200px;
+  border: solid 1px #ffffff;
+  display: flex;
+  height: 0px;
+}
+
+
+table {
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  width: 70%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.57);
+  /* padding-top: 10px; */
+  position: relative;
+  font-weight: 500;
+}
+
+
+table th {
+  color: #ffffff;
+}
+
+table tr td {
+  height: 50px;
+  color: #f5f69c;
+  align-items:center ;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.space-line-table {
+  width: 70%;
+  border: solid 1px #ffffff80;
+  display: flex;
+  height: 0px;
+  position: absolute;
+  top: 37%;
+}
+table tr:hover {
+  background-color: #666666;
+  
+}
+
+table tr {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(82, 82, 82, 0.30);
+}
+
+.agents {
+  position: relative;
+}
+
+.bottom-image, .image-Jett, .image-Viper, .image-Brit, .image-Sage, .image-KJ, .image-BN, .image-Reyna, .image-Kay-o {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}

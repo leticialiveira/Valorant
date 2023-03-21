@@ -33,8 +33,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* border-left: solid 1px var(--linhas-main); */
-  /* border-right: solid 1px var(--linhas-main); */
 }
 
 .main header {
@@ -44,17 +42,22 @@ body {
   justify-content: center;
 }
 
-header .fundo-menu {
+header .bottom-menu {
   position: relative;
+  bottom: 84%;
 }
 
-header .inicio-menu {
+header .start-menu {
   position: absolute;
-  bottom: 95%;
-  left: 45%;
+  top: 0%;
+  left: 35%;
 }
 
-header .inicio-menu p {
+header .start-menu a { 
+  color: var(--color-body);
+}
+
+header .start-menu p {
   font-weight: 600;
   font-size: 28px;
   line-height: 33px;
@@ -63,35 +66,41 @@ header .inicio-menu p {
   right: 30%;
 }
 
-header .icons-e {
+header .icons-left {
   position: absolute;
-  left: 40%;
+  left: 15%;
+  top: 0%;
 }
 
-.icons-e img {
+.icons-left img {
   margin-right: 6px;
 }
 
-header .icons-d {
+header .icons-right {
   position: absolute;
-  right: 40%;
+  right: 15%;
+  top: 0%;
 }
 
-.icons-d img {
+.icons-right img {
   margin-right: 6px;
 }
 
-.centro {
+.center {
   width: 100%;
   height: 100%;
   display: flex;
+<<<<<<< HEAD
   /* padding-top: 100px; */
   /* margin-bottom: 10px; */
+=======
+  padding-top: 100px;
+>>>>>>> 790c931e94588a53eb06ebf368eaaf31897a57f0
   align-items: center;
   justify-content: center;
 }
 
-.centro-esquerda {
+.center-left {
   width: 33.3%;
   height: auto;
   display: flex;
@@ -101,27 +110,27 @@ header .icons-d {
   padding-right: 20px;
 }
 
-.centro-esquerda .centro-esquerda-titulo {
+.center-left .center-left-title {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding-right: 30px;
 }
 
-.centro-esquerda .centro-esquerda-titulo p {
+.center-left .center-left-title p {
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
 }
 
-.centro-esquerda .centro-esquerda-titulo h1 {
+.center-left .center-left-title h1 {
   font-weight: 600;
   font-size: 36px;
   line-height: 42px;
   color: var(--resumo-titulo);
 }
 
-.centro-esquerda-informacoes {
+.center-left-information {
   display: flex;
   flex-direction: row;
   /* border: solid 1px green; */
@@ -129,7 +138,7 @@ header .icons-d {
   padding-top: 20px;
 }
 
-.centro-esquerda-inf-e ul {
+.center-left-inf-l ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -139,24 +148,24 @@ header .icons-d {
   width: 8vw;
 }
 
-.centro-esquerda-inf-e li p {
+.center-left-inf-l li p {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
 
-.centro-esquerda-inf-e li span:hover {
+.center-left-inf-l li span:hover {
   color: var(--color-plane);
 }
 
-.centro-esquerda-inf-e li span {
+.center-left-inf-l li span {
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
   color: var(--resumo-titulo);
 }
 
-.centro-esquerda-inf-d ul {
+.center-left-inf-right ul {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -164,28 +173,27 @@ header .icons-d {
   gap: 20px;
   text-align: right;
   list-style-type: none;
-  /* border: solid 1px red; */
   width: 8vw;
 }
 
-.centro-esquerda-inf-d li p {
+.center-left-inf-right li p {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
 
-.centro-esquerda-inf-d li span {
+.center-left-inf-right li span {
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
   color: var(--resumo-titulo);
 }
 
-.centro-esquerda-inf-d li span:hover {
+.center-left-inf-right li span:hover {
   color: var(--color-plane);
 }
 
-.centro-sombra-personagem {
+.center-shadow-persona {
   width: 33.3%;
   height: 70vh;
   display: flex;
@@ -195,14 +203,14 @@ header .icons-d {
   /* padding-bottom: 100px; */
 }
 
-.centro-sombra-personagem h1 {
+.center-shadow-persona h1 {
   font-weight: 700;
   font-size: 96px;
   line-height: 112px;
   margin-top: 180px;
 }
 
-.centro-sombra-personagem img {
+.center-shadow-persona img {
   display: flex;
   position: relative;
   bottom: 20%;
@@ -210,13 +218,13 @@ header .icons-d {
   border-bottom: solid 1px var(--color-body);
 }
 
-.img-personagem img {
+.image-persona img {
   position: absolute;
   right: 42%;
   top: 18%;
 }
 
-.centro .centro-direita {
+.center .center-right {
   width: 33.3%;
   height: 3auto;
   display: flex;
@@ -227,44 +235,44 @@ header .icons-d {
   padding-left: 20px;
 }
 
-.centro-direita .centro-direita-titulo {
+.center-right .center-right-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1px;
 }
 
-.centro-direita .centro-direita-titulo p {
+.center-right .center-right-title p {
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
 }
 
-.centro-direita .centro-direita-titulo h1 {
+.center-right .center-right-title h1 {
   font-weight: 600;
   font-size: 36px;
   line-height: 42px;
   color: var(--resumo-titulo);
 }
 
-.centro-direita .centro-direita-habilidades {
+.center-right .center-right-skills {
   display: flex;
   align-items: flex-start;
   gap: 1vw;
   position: relative;
 }
 
-.centro-direita-habilidades img:hover {
+.center-right-skills img:hover {
   transform: scale(1.1);
 }
 
-.centro-direita .centro-direita-textos {
+.center-right .center-right-texts {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.centro-direita-textos span {
+.center-right-texts span {
   color: #f9aff6;
   font-weight: 300;
   font-size: 13px;
@@ -273,36 +281,39 @@ header .icons-d {
   text-align: justify;
 }
 
-.centro-direita .centro-direita-textos h3 {
+.center-righ .center-righ-texts h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
 
-.centro-direita .centro-direita-textos p {
+.center_right .center_right-texts p {
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
   width: 14vw;
 }
 
-.centro-direita-textos .explicacao-duelista {
+.center-right-texts .explication {
   gap: 10px;
 }
 
-.personagens-bottom {
+.personas-bottom {
   width: 60vw;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   /* padding-bottom: 50px; */
   margin-top: 60px;
   /* border-top: solid 1px var(--color-body); */
+=======
+>>>>>>> 790c931e94588a53eb06ebf368eaaf31897a57f0
   flex-direction: column;
 }
 
-.personagens-bottom .divisao {
+.personas-bottom .division {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -310,12 +321,12 @@ header .icons-d {
   gap: 15px;
 }
 
-.divisao .plane-line {
+.division .plane-line {
   border: solid 1px var(--color-plane);
   height: 0px;
   width: 31vw;
 }
-.personagens-bottom .escolha-personagem {
+.personas-bottom .choice-persona {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -323,10 +334,12 @@ header .icons-d {
   gap: 12px;
 }
 
-.escolha-personagem .imagem-reyna {
+.choice-persona .image-reyna {
   margin-bottom: 15px;
 }
-.escolha-personagem img:hover {
-  /* border: solid 1px var(--linhas-main); */
-  transform: scale(0.8);
+
+
+.choice-persona:hover > :not(:hover) {
+  opacity: .4;
+  transform: scale(.9);
 }

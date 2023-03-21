@@ -39,37 +39,37 @@ body {
     position: relative;
 }
 
-.main .alvo-um {
+.main .target-0 {
     position: absolute;
     bottom: 290px;
     right: 680px;
 }
 
-.main .alvo-dois {
+.main .target-1 {
     position: absolute;
     top: 240px;
     right: 430px;
 }
 
-.main .alvo-tres {
+.main .target-2 {
     position: absolute;
     bottom: 380px;
     right: 400px;
 }
 
-.main .alvo-quatro {
+.main .target-3 {
     position: absolute;
     left: 450px;
     bottom: 430px ;
 }
 
-.main .alvo-cinco {
+.main .target-4 {
     position: absolute;
     left: 300px;
     top: 380px ;
 }
 
-.main .alvo-seis {
+.main .target-5 {
     position: absolute;
     left: 160px;
     top: 580px ;
@@ -82,17 +82,22 @@ body {
     justify-content: center;
 }
   
-header .fundo-menu {
+header .bottom-menu {
     position: relative;
-}
+    bottom: 84%;
+  }
   
-header .inicio-menu {
-    position: absolute;
-    bottom: 95%;
-    left: 45%;
+header .start-menu {
+  position: absolute;
+  top: 0%;
+  left: 35%;
 }
 
-header .inicio-menu p {
+header .start-menu a { 
+    color: var(--color-body);
+}
+
+header .start-menu p {
     font-weight: 600;
     font-size: 28px;
     line-height: 33px;
@@ -101,25 +106,27 @@ header .inicio-menu p {
     right: 30%;
 }
   
-header .icons-e  {
+header .icons-left  {
     position: absolute;
-    left: 40%;   
+    left: 15%;
+    top: 0%;   
 }
   
-.icons-e img {
+.icons-left img {
     margin-right: 6px;
 }
 
-header .icons-d {
+header .icons-right {
     position: absolute;
-    right: 37%;
+    right: 15%;
+    top: 0%;
 }
 
-.icons-d img {
+.icons-right img {
     margin-right: 6px;
 }
 
-.main .titulo {
+.main .title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +135,7 @@ header .icons-d {
     height: auto;
 }
 
-.main .titulo h1 {
+.main .title h1 {
     display: flex;
     align-items: center;
     justify-items: center;
@@ -139,13 +146,13 @@ header .icons-d {
     position: relative;
 }
 
-.titulo > img {
+.title > img {
     position: absolute;
     right: 689px;
     top: 130px;
 }
 
-.titulo .space-logo {
+.title .space-logo {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -154,14 +161,14 @@ header .icons-d {
     padding-bottom: 30px;
 }
   
-.titulo .space-line {
+.title .space-line {
     width: 200px;
     border: solid 1px var(--color-body);
     display: flex;
     height: 0px;
 }
 
-.centro {
+.center {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,21 +178,21 @@ header .icons-d {
     position: relative;
 }
 
-.centro .sombra-arma {
+.center .shadow-arm {
     position: relative;
 }
 
-.centro .arma-principal {
+.center .arm-main {
     position: absolute;
     bottom: 21%;
 }
 
-.centro .linha-arma {
+.center .line-arm {
     position: absolute;
     bottom: -13px;
 }
 
-.centro p {
+.center p {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
@@ -193,13 +200,13 @@ header .icons-d {
     bottom: 7%;
 }
 
-.centro .raio-d {
+.center .ray-right {
     position: absolute;
     top: 160px;
     right: -11px;
 }
 
-.centro .retangulo-d p{
+.center .rectangle-right p{
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -214,13 +221,17 @@ header .icons-d {
     right: -100px;
 }
 
-.centro .raio-cd {
+.center .rectangle-right p:hover {
+    transform: scale(1.1);
+}
+
+.center .ray-center-right {
     position: absolute;
     top: 215px;
     right: 146px;
 }
 
-.centro .retangulo-cd p{
+.center .rectangle-center-right p{
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -235,13 +246,17 @@ header .icons-d {
     left: 250px;
 }
 
-.centro .raio-ce {
+.center .rectangle-center-right p:hover {
+    transform: scale(1.1);
+}
+
+.center .ray-center-left {
     position: absolute;
     top: 145px;
     left: 133px;
 }
 
-.centro .retangulo-ce p{
+.center .rectangle-center-left p{
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -256,13 +271,18 @@ header .icons-d {
     left: 133px;
 }
 
-.centro .raio-e {
+.center .rectangle-center-left p:hover {
+    transform: scale(1.1);
+}
+
+
+.center .ray-left {
     position: absolute;
     top: 188px;
     left: 32px;
 }
 
-.centro .retangulo-e p{
+.center .rectangle-left p{
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -277,7 +297,12 @@ header .icons-d {
     left: -10px;
 }
 
-.main .escolha-arma {
+.center .rectangle-left p:hover {
+    transform: scale(1.1);
+}
+
+
+.main .choice-arm {
     height: auto;
     width: auto;
     display: flex;
@@ -289,11 +314,17 @@ header .icons-d {
 
 }
 
-.escolha-arma .arma-tres {
+.choice-arm .arm-3 {
     padding-bottom: 30px;
     border-bottom: solid 1px var(--background-border);
 }
 
-.escolha-arma img:hover {
-    transform: scale(0.8);
+.choice-arm img {
+    transition: .4s;
+    cursor: context-menu !important; 
+}
+
+.choice-arm:hover > :not(:hover){
+    transform: scale(.9);
+    opacity: .4;
   }
